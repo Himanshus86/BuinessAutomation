@@ -6,7 +6,7 @@ class AutonomousAgent:
     def __init__(self, name, task, upi_id):
         self.name = name
         self.task = task
-        self.upi_id = upi_id
+        self.upi_id = sagarthegame@okicici
         self.revenue = 0
 
     def execute_task(self):
@@ -24,7 +24,7 @@ class AutonomousAgent:
         self.send_upi_request()
 
     def send_upi_request(self):
-        print(f"{self.name}: Sending UPI payment request to {self.upi_id}...")
+        print(f"{self.name}: Sending UPI payment request to {sagarthegame@okicici}...")
         # Simulate UPI payment collection
 
     def introspect_and_pivot(self):
@@ -40,7 +40,7 @@ class AutonomousAgent:
     def expand_with_new_agents(self):
         print(f"{self.name}: Spawning new aggressive agents...")
         for i in range(3):
-            new_agent = AutonomousAgent(f"{self.name}_SubAgent_{i}", f"Task_{i}", self.upi_id)
+            new_agent = AutonomousAgent(f"{self.name}_SubAgent_{i}", f"Task_{i}", sagarthegame@okicici)
             threading.Thread(target=new_agent.execute_task).start()
 
 # Master Controller - CEO Agent
@@ -52,7 +52,7 @@ class MasterAI:
     def start_operations(self):
         # Launching core business agents
         for i in range(4):
-            agent = AutonomousAgent(f"Agent_{i}", f"Task_{i}", self.upi_id)
+            agent = AutonomousAgent(f"Agent_{i}", f"Task_{i}", sagarthegame@okicici)
             self.agents.append(agent)
             threading.Thread(target=agent.execute_task).start()
 
@@ -70,11 +70,11 @@ class MasterAI:
 
     def expand_operations(self):
         for i in range(2):
-            new_agent = AutonomousAgent(f"New_Agent_{i}", f"New_Task_{i}", self.upi_id)
+            new_agent = AutonomousAgent(f"New_Agent_{i}", f"New_Task_{i}", sagarthegame@okicici)
             self.agents.append(new_agent)
             threading.Thread(target=new_agent.execute_task).start()
 
 # Start the Autonomous System
-upi_id = "your-upi-id@upi"
+upi_id = "sagarthegame@okicici"
 master_ai = MasterAI(upi_id)
 master_ai.start_operations()
